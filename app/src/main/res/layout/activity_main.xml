@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".MainActivity">
+
+    <!-- Gradient Overlay -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#40000000"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <!-- Welcome Header Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#4D000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="24dp"
+            android:text="Bienvenue"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            android:textStyle="bold|italic"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Buttons Container -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#26FFFFFF"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:ignore="ExtraText">
+
+            <!-- Flash Cards Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFlashCards"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#2196F3"
+                android:text="Flash Cards"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:cornerRadius="16dp" />
+
+            <!-- Tests Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTests"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:backgroundTint="#1976D2"
+                android:text="Tests"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:cornerRadius="16dp" />
+
+            <!-- Logout Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#C10606"
+                android:text="Logout"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:cornerRadius="16dp" />
+
+            <!-- Leaderboards Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/leaderbords"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#8BC34A"
+                android:text="Leaderboard"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:cornerRadius="16dp" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
