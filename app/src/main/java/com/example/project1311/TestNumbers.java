@@ -35,7 +35,7 @@ import java.util.concurrent.ExecutionException;
 public class TestNumbers extends AppCompatActivity implements View.OnClickListener {
 
     // Link to get quiz questions
-    private String apiUrl = "https://mocki.io/v1/f7c53113-f6da-45bf-be5f-6d7ac95bd72e";
+    private String apiUrl = "https://mocki.io/v1/4a683e13-35f0-461b-ad77-38461e842fbd";
 
     // Screen elements
     private TextView questionTextView;
